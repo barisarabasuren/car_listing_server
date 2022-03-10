@@ -18,7 +18,6 @@ const mongoConnect = async (env) => {
     } else {
         await mongoose.connect(MONGO_URL_DEP);
     }
-    
 }
 
 const mongoDisconnect = async () => {
