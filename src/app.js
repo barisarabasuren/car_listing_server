@@ -4,9 +4,7 @@ const carsRouter = require('./routes/cars.router')
 
 const app = express();
 
-app.use(cors({
-    origin: 'https://car-listing-umut.netlify.app'
-}))
+app.use(cors())
 
 app.use(express.json());
 app.use(carsRouter)
